@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crime Record Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Crime Record Management System</h1>
+  </header>
+  <main>
+    <section id="crime-form">
+      <h2>Report a Crime</h2>
+        <form id="crime-report-form" action="save_record.php" method="POST">
+
+        <label for="crime-type">Type of Crime:</label>
+        <input type="text" id="crime-type" name="crime-type" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Submit</button>
+      </form>
+
+    </section>
+
+    <section id="crime-list">
+      <h2>Crime Records</h2>
+      <ul id="records-list">
+        <!-- Crime records will be dynamically populated here -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
